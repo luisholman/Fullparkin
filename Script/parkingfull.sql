@@ -52,7 +52,7 @@ INSERT INTO `adicionales` (`idAdicionales`, `Servicio`, `Placa`, `Codigo`, `Desc
 
 CREATE TABLE `admin` (
   `idAdmin` int(2) NOT NULL,
-  `Administrador` varchar(45) NOT NULL,
+  `Administrador` varchar(45) NOT NULL,  
   `Empleado` varchar(45) NOT NULL,
   `Password` varchar(15) NOT NULL,
   `Email` varchar(15) NOT NULL

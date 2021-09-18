@@ -33,20 +33,26 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="./css login/css/main.css">
 </head>
-<body class="cover" style="background-image: url(./imagen/Smp.jpg);">
+<body class="" style="background-image: url(./imagen/Smp.jpg);">
 	<form  method="POST" autocomplete="off" class="full-box logInForm">
-		<p class="text-center text-muted"><img src="./imagen/user avatar.png" width="70" height="70" alt=""></p>
+		<p class="text-center text-muted"><img src="./imagen/user avatar.png" width="100" height="100" alt=""></p>
 		<p class="text-center text-muted ">Inicio Sesión</p>
-		<div class="form-group label-floating">
-		  <label class="control-label" for="staticEmail">Email</label>
-		  <input class="form-control" id="email" type="email" name="email">
-		  <p class="help-block">Ingresa tu Email</p>
+		<div class="form -floating ">
+		  <label for="inputEmail" ></label>
+		  <input class="form-control" id="email" type="email" name="email" placeholder="Ingrese su email">
+		  
 		</div>
-		<div class="form-group label-floating">
-		  <label class="control-label" for="inputPassword">Contraseña</label>
-		  <input class="form-control" id="password" type="password" name="password">
-		  <p class="help-block">Ingresa tú contraseña</p>
+		<div class="form-floating ">
+		  <label  for="inputPassword"></label>
+		  <input class="form-control" id="password" type="password" name="password" placeholder="Ingrese su contraseña">
+		  
 		</div>
+		<div class="form-check mb-3">
+                                            <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
+                                                <label class="form-check-label" for="inputRememberPassword">Recordar Contraseña</label>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
+                                                <a class="small" href="password.html">Has olvidado tu contraseña?</a>
 		<div class="form-group text-center">
 			<input type="submit" value="Ingresar" name="btningresar" class="btn btn-raised btn-danger">
 		</div>
