@@ -17,13 +17,13 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 <div class="container">
 <div class="row">
 <div class="col-12">
-    <h1>Listado de clientes</h1>
+    <h1 class="text-center" >Listado de servicios Adicionales</h1>
 </div>
 
     <table class="table table-bordered border-gray ">
     <thead>
     <tr>
-        <th scope="col">ID.adicional</th>
+        <th scope="col">Id Adicional</th>
         <th scope="col">Servicio</th>
         <th scope="col">Placa</th>
         <th scope="col">Codigo</th>
