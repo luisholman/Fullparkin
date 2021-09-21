@@ -3,7 +3,7 @@
 <div class="container">
 <div class="row">
     <div class="col-12">
-        <h1>Adicionales</h1>
+        <h1 class="text-center" >Servicio Adicional</h1>
         <form action="registrarAdicionales.php" method="POST">
             <div class="mb-3">
             <label for="servicio" class="form-label">Servicio</label>
