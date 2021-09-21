@@ -87,7 +87,7 @@
 								<i class="fa fa-search"></i>
 						   </a>
 							<form action="https://www.google.es/" target="_blank">
-								<input class="form-control" type="text" placeholder="Buscar en Google">
+								<input class="form-control" type="text" placeholder="Buscar">
 								<button class="btn" type="submit"><i class="fa fa-search"></i></button>
 							</form>
 						</div>
@@ -169,6 +169,11 @@
 								<a href="#" ><i class="la la-dashboard"></i> <span> Registro Vehiculos</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" class="active" href="./Registrovehiculos/registro_vehiculos.php">Registrar Vehiculo</a></li>
+									
+									<li class="submenu">
+									<a href="#" ><i class="la la-dashboard"></i> <span> Espacios vehiculos</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a class="noti-dot" class="active" href="./Espacios/index.php">Espacios Vehiculo</a></li>
 							
 								</ul>
 							</li>
@@ -213,7 +218,7 @@
 								<a href="#" ><i class="la la-hand-o-up"></i> <span> Contactanos </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="subscriptions.html"> Luis Oicata </a></li>
-									<li><a class="noti-dot" href="subscriptions-company.html"> Omar Giovanny </a></li>
+									<li><a class="noti-dot" href="subscriptions-company.html"> Giovanni sierra Rico</a></li>
 									<li><a class="noti-dot" href="subscribed-companies.html"> Pagina Web </a></li>
 								</ul>
 							</li>
@@ -221,7 +226,7 @@
 								<a href="#"><i class="la la-edit"></i> <span> Suscripcion </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot"  href="suscripcion.php"> Suscribete </a></li>
-									<li><a class="noti-dot"  href="task.php"> tas </a></li>
+									<!--<li><a class="noti-dot"  href="task.php"> tas </a></li>-->
 								</ul>
 							</li>
 							<li class="submenu">
