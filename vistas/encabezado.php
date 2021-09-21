@@ -169,6 +169,15 @@
 						<ul>
 							<li class="menu-title"> 
 								<span>Menu</span>
+								<li class="submenu">
+								<a href="#"><i class="la la-key"></i> <span> Acceso al Sistema </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a class="noti-dot" href="admin.php"> registrar Acceso  </a></li>
+									<li><a class="noti-dot" href="listar_Admin.php"> Lista de acceso </a></li>
+		
+								</ul>
+							</li>
+
 							</li>
 							<li class="submenu">
 								<a href="#" ><i class="la la-dashboard"></i> <span> Registro Vehiculos</span> <span class="menu-arrow"></span></a>
@@ -237,16 +246,16 @@
 									<li><a class="noti-dot" href="calendario.php"> Calendario </a></li>
 								</ul>
 							</li>
-							<li class="submenu">
+							<!--<li class="submenu">
 							<li><a href="#">
 								
 								<i class="la la-times-circle"></i> <span>Salir</span></a></li>
-													
+							
 								</ul>
 							
 							</li>
 							
-							</li>
+							</li>-->
 						</ul>
 					</div>
                 </div>
