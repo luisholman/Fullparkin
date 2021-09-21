@@ -14,7 +14,7 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 <div class="container mt-5">
 <div class="row">
 <div class="col-12">
-    <h1>Listado de clientes</h1>
+    <h1 class="text-center" >Listado de clientes</h1>
 </div>
 <div class="col-12">
     <table class="table table-bordered">
