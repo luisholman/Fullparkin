@@ -42,6 +42,20 @@
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- Select2 CSS -->
+		<link rel="stylesheet" href="assets/css/select2.min.css">
+
+		<!-- Datetimepicker CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+		
+		<!-- Calendar CSS -->
+		<link rel="stylesheet" href="assets/css/fullcalendar.min.css">
+		
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+		
+
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -172,13 +186,14 @@
 								<li class="submenu">
 								<a href="#"><i class="la la-key"></i> <span> Acceso al Sistema </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a class="noti-dot" href="admin.php"> registrar Acceso  </a></li>
-									<li><a class="noti-dot" href="listar_Admin.php"> Lista de acceso </a></li>
+									<li><a class="noti-dot" href="admin.php"> Registrar Acceso  </a></li>
+									<li><a class="noti-dot" href="listar_Admin.php"> Lista de Acceso </a></li>
 		
 								</ul>
 							</li>
 
 							</li>
+						<!--
 							<li class="submenu">
 								<a href="#" ><i class="la la-dashboard"></i> <span> Registro Vehiculos</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
@@ -186,6 +201,7 @@
 									<li><a class="noti-dot" class="active" href="./Registrovehiculos/registro_vehiculos.php">Listado Vehiculos</a></li>
 								</ul>
 							</li>
+						-->
 							
 							
 							<li class="submenu">
@@ -220,8 +236,8 @@
 							<li class="submenu">
 								<a href="#" ><i class="la la-file-text"></i> <span> Factura </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a class="noti-dot" href="./Factura/factura.php"> Generar Factura </a></li>
-								
+									<li><a class="noti-dot" href="factura.php"> Registrar Factura </a></li>
+									<li><a class="noti-dot" href="listar_Factura.php"> Listado Facturas </a></li>
 								</ul>
 							</li>
 							
