@@ -24,6 +24,7 @@
 
             <div class="mb-3">
             <button class="btn btn-primary account-btn">Guardar</button>
+            <a class="btn btn-secondary" href="listar_Admin.php">Ir a Listado Acceso </a>
             </div>
         </form>
     </div>
