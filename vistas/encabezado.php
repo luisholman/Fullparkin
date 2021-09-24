@@ -183,6 +183,10 @@
 						<ul>
 							<li class="menu-title"> 
 								<span>Menu</span>
+								<li> 
+								<a href="home.php"><i class="la la-dashboard"></i> <span>Pagina Principal</span></a>
+							</li>
+
 								<li class="submenu">
 								<a href="#"><i class="la la-key"></i> <span> Acceso al Sistema </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
@@ -193,17 +197,7 @@
 							</li>
 
 							</li>
-						<!--
-							<li class="submenu">
-								<a href="#" ><i class="la la-dashboard"></i> <span> Registro Vehiculos</span> <span class="menu-arrow"></span></a>
-								<ul style="display: none;">
-									<li><a class="noti-dot" class="active" href="./Registrovehiculos/registro_vehiculos.php">Registrar Vehiculo</a></li>
-									<li><a class="noti-dot" class="active" href="./Registrovehiculos/registro_vehiculos.php">Listado Vehiculos</a></li>
-								</ul>
-							</li>
-						-->
-							
-							
+						
 							<li class="submenu">
 								<a href="#" ><i class="la la-user"></i> <span> Registro Clientes</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
@@ -217,7 +211,8 @@
 							<li class="submenu">
 								<a href="#" "><i class="la la-money"></i> <span> Tarifas </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a class="noti-dot" href="./Tarifas/tarifas.php"> Cambio de Tarifas </a></li>
+									<li><a class="noti-dot" href="Tarifas.php"> Cambio de Tarifas </a></li>
+									<li><a class="noti-doc" href="listar_Tarifas.php"> Lista de Tarifas </a></li>
 								
 								</ul>
 							</li>
@@ -253,7 +248,7 @@
 								<a href="#"><i class="la la-edit"></i> <span> Suscripcion </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot"  href="suscripcion.php"> Suscribete </a></li>
-									<li><a class="noti-dot"  href="task.php"> tas </a></li>
+									
 								</ul>
 							</li>
 							<li class="submenu">
