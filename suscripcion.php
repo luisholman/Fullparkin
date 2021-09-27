@@ -13,7 +13,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
@@ -23,44 +23,44 @@
         <meta name="robots" content="noindex, nofollow">
         <title>Subscriptions - HRMS admin template</title>
 		
-		<!-- Favicon -->
+		
         <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 		
-		<!-- Bootstrap CSS -->
+		
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 		
-		<!-- Fontawesome CSS -->
+		
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		
-		<!-- Lineawesome CSS -->
+		
         <link rel="stylesheet" href="assets/css/line-awesome.min.css">
 		
-		<!-- Select2 CSS -->
+		
 		<link rel="stylesheet" href="assets/css/select2.min.css">
 		
-		<!-- Main CSS -->
+		
         <link rel="stylesheet" href="assets/css/style.css">
 		
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
+		 HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+		[if lt IE 9]
 			<script src="assets/js/html5shiv.min.js"></script>
 			<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
+		[endif]
     </head>
     <body>
-		<!-- Main---------------------------------------------------------------------------------- Wrapper -->
+		
         <div class="main-wrapper">
 		
-			<!-- Header -->
+			
             <div class="header">
 			
-				<!-- Logo -->
+				
                 <div class="header-left">
                     <a href="home.php" class="logo">
 						<img src="./imagen/tt.png" width="50" height="40" alt="">
 					</a>
                 </div>
-				<!-- /Logo -->
+				
 				<a id="toggle_btn" href="javascript:void(0);">
 					
 					<span class="bar-icon">
@@ -69,18 +69,18 @@
 						<span></span>
 					</span>
 				</a>
-				<!-- Header Title -->
+				
                 <div class="page-title-box">
-					<h3>Fullparking</h3>
+					<h3>fullparking</h3>
                 </div>
-				<!-- /Header Title -->
+				
 				
 				<a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa fa-bars"></i></a>
 				
-				<!-- Header Menu -->
+				
 				<ul class="nav user-menu">
 				
-					<!-- Buscador -->
+					
 					<li class="nav-item">
 						<div class="top-nav-search">
 							<a href="javascript:void(0);" class="responsive-search">
@@ -92,7 +92,7 @@
 							</form>
 						</div>
 					</li>
-					<!-- /buscador -->
+					
 				
 
 
@@ -125,9 +125,9 @@
 						
 					</li>
 				</ul>
-				<!-- /Header Menu -->
 				
-				<!-- Mobile Menu -->
+				
+				
 				<div class="dropdown mobile-user-menu">
 					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 					<div class="dropdown-menu dropdown-menu-right">
@@ -152,12 +152,12 @@
 
 					</div>
 				</div>
-				<!-- /Mobile Menu -->
+				
 				
             </div>
-			<!-- /Header -->
 			
-			<!-- Sidebar -->
+			
+			
             <div class="sidebar" id="sidebar">
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
@@ -170,10 +170,7 @@
 								<ul style="display: none;">
 									<li><a class="noti-dot" class="active" href="./Registrovehiculos/registro_vehiculos.php">Registrar Vehiculo</a></li>
 									
-									<li class="submenu">
-									<a href="#" ><i class="la la-dashboard"></i> <span> Espacios vehiculos</span> <span class="menu-arrow"></span></a>
-								<ul style="display: none;">
-									<li><a class="noti-dot" class="active" href="./Espacios/index.php">Espacios Vehiculo</a></li>
+								
 							
 								</ul>
 							</li>
@@ -189,7 +186,7 @@
 						
 						
 							<li class="submenu">
-								<a href="#" "><i class="la la-money"></i> <span> Tarifas </span> <span class="menu-arrow"></span></a>
+								<a href="#" ><i class="la la-money"></i> <span> Tarifas </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="./Tarifas/tarifas.php"> Cambio de Tarifas </a></li>
 								
@@ -218,7 +215,7 @@
 								<a href="#" ><i class="la la-hand-o-up"></i> <span> Contactanos </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="subscriptions.html"> Luis Oicata </a></li>
-									<li><a class="noti-dot" href="subscriptions-company.html"> Giovanni sierra Rico</a></li>
+									<li><a class="noti-dot" href="subscriptions-company.html"> Giovanni Sierra Rico</a></li>
 									<li><a class="noti-dot" href="subscribed-companies.html"> Pagina Web </a></li>
 								</ul>
 							</li>
@@ -226,7 +223,7 @@
 								<a href="#"><i class="la la-edit"></i> <span> Suscripcion </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot"  href="suscripcion.php"> Suscribete </a></li>
-									<!--<li><a class="noti-dot"  href="task.php"> tas </a></li>-->
+									
 								</ul>
 							</li>
 							<li class="submenu">
@@ -249,15 +246,15 @@
 					</div>
                 </div>
             </div>
-			<!-- /Sidebar -->
 			
-			<!-- Page Wrapper -->
+			
+			
             <div class="page-wrapper">
 			
-				<!-- Page Content -->
+				
                 <div class="content container-fluid">
 					
-					<!-- Page Header -->
+					
 					<div class="page-header">
 						
 						<div class="row">
@@ -709,20 +706,20 @@
         </div>
 		<!-- /Main Wrapper -->
 		
-		<!-- jQuery -->
+		
         <script src="assets/js/jquery-3.5.1.min.js"></script>
 		
-		<!-- Bootstrap Core JS -->
+		
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
 		
-		<!-- Slimscroll JS -->
+		
 		<script src="assets/js/jquery.slimscroll.min.js"></script>
 		
-		<!-- Select2 JS -->
+		
 		<script src="assets/js/select2.min.js"></script>
 		
-		<!-- Custom JS -->
+		
 		<script src="assets/js/app.js"></script>
 		
     </body>

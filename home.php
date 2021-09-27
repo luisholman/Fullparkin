@@ -17,7 +17,7 @@ require_once"./vistas/encabezado.php"
         </div>
         
         <div class="form-container mt-5">
-            <h1 class="text-center" >Registro Vehiculos</h1>
+            <h1 class="text-center" >Registro vehiculos</h1>
             <form class="w-50 mx-auto" action="registrar_Vehiculos.php" method="POST" >            
                 <div class="form-group">
                     <label for="nombrecliente" class="form-label">Nombre del Cliente</label>
