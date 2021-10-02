@@ -12,7 +12,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
@@ -106,7 +106,7 @@
 								<i class="fa fa-search"></i>
 						   </a>
 							<form action="https://www.google.es/" target="_blank">
-								<input class="form-control" type="text" placeholder="Buscar en Google">
+								<input class="form-control" type="text" placeholder="Buscar">
 								<button class="btn" type="submit"><i class="fa fa-search"></i></button>
 							</form>
 						</div>
@@ -184,7 +184,7 @@
 							<li class="menu-title"> 
 								<span>Menu</span>
 								<li> 
-								<a href="home.php"><i class="la la-dashboard"></i> <span>Pagina Principal</span></a>
+								<a href="home.php"><i class="la la-home"></i> <span>Pagina Principal</span></a>
 							</li>
 
 								<li class="submenu">
@@ -192,6 +192,7 @@
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="admin.php"> Registrar Acceso  </a></li>
 									<li><a class="noti-dot" href="listar_Admin.php"> Lista de Acceso </a></li>
+									
 		
 								</ul>
 							</li>
@@ -203,16 +204,18 @@
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="clientes.php">Registrar Cliente</a></li>
 									<li><a class="noti-dot" href="listarclientes.php">Listado Cliente</a></li>
+									<li><a class="noti-dot" href="Convenios/index.php">Convenios</a></li>
 
 								</ul>
 							</li>
 						
 						
 							<li class="submenu">
-								<a href="#" "><i class="la la-money"></i> <span> Tarifas </span> <span class="menu-arrow"></span></a>
+								<a href="#" ><i class="la la-money"></i> <span> Tarifas </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="Tarifas.php"> Cambio de Tarifas </a></li>
 									<li><a class="noti-doc" href="listar_Tarifas.php"> Lista de Tarifas </a></li>
+									<li><a class="noti-dot" href="Detalle tarifas/index.php"> Detalle tarifas</a></li> <!--solo  acceso para admi-->
 								
 								</ul>
 							</li>
@@ -222,6 +225,7 @@
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="adicionales.php"> Agregar Servicio </a></li>
 									<li><a class="noti-dot" href="listarAdicionales.php"> Lista Adicionales </a></li>
+									<li><a class="noti-dot" href="Detalle adicionales/index.php"> Detalle adicionales</a></li> <!--solo  acceso para admi-->
 								</ul>
 							</li>
 							
@@ -236,11 +240,29 @@
 								</ul>
 							</li>
 							
+
+							<li class="submenu">
+							<a href="#" ><i class="la la-box"></i> <span> Caja </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a class="noti-dot" href="Caja/index.php"> caja </a></li>
+									
+								</ul>
+							</li>
+
+							<li class="submenu">
+							<a href="#" ><i class="la la-car"></i> <span> Espacios </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a class="noti-dot" href="Espacios/index.php"> Espacios </a></li>
+									
+								</ul>
+							</li>
+
+
 							<li class="submenu">
 								<a href="#" ><i class="la la-hand-o-up"></i> <span> Contactanos </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="subscriptions.html"> Luis Oicata </a></li>
-									<li><a class="noti-dot" href="subscriptions-company.html"> Omar Giovanny </a></li>
+									<li><a class="noti-dot" href="subscriptions-company.html"> Giovanni Sierra Rico </a></li>
 									<li><a class="noti-dot" href="subscribed-companies.html"> Pagina Web </a></li>
 								</ul>
 							</li>
@@ -251,12 +273,19 @@
 									
 								</ul>
 							</li>
-							<li class="submenu">
+							<!--<li class="submenu"> 
 								<a href="#"><i class="la la-table"></i> <span> Calendario </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="calendario.php"> Calendario </a></li>
 								</ul>
-							</li>
+							</li> -->
+
+							<li class="submenu">
+								<a href="#"><i class="la la-table"></i> <span> Mensualidades </span> <span class="menu-arrow"></span></a> <!--solo  acceso para admi-->
+								<ul style="display: none;">
+									<li><a class="noti-dot" href="Mensualidades/index.php"> Mensualidades </a></li>
+								</ul>
+								</li>
 							<!--<li class="submenu">
 							<li><a href="#">
 								
