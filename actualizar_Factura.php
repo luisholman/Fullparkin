@@ -20,7 +20,7 @@ Subtotal =?,
 Impuestos =?,
 Total =?
 WHERE idFactura = ?");
-$queryActualizacion->bind_param("sddddiiii",$Placa,$Fecha_de_Ingreso,$Hora_Ingreso,$Fecha_de_salida,$Hora_de_salida,$Subtotal,$Impuestos,$Total,$idFactura);
+$queryActualizacion->bind_param("sssssiiii",$Placa,$Fecha_de_Ingreso,$Hora_Ingreso,$Fecha_de_salida,$Hora_de_salida,$Subtotal,$Impuestos,$Total,$idFactura);
 $queryActualizacion->execute();
 header("location: listar_Factura.php");
 ?>
