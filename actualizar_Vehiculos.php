@@ -21,7 +21,7 @@
     Hora_salida=?,
     Fecha_salida=?
     WHERE Idregistro_vehiculos = ?");
-    $queryActualizacion->bind_param("ddsssiddi",$Hora_ingreso,$Fecha_ingreso,$Tipo_vehiculo,$Placa_vehiculo,$Nombre_cliente,$Identificacion,$Hora_salida,$Fecha_salida,$Idregistro_vehiculos);
+    $queryActualizacion->bind_param("sssssissi",$Hora_ingreso,$Fecha_ingreso,$Tipo_vehiculo,$Placa_vehiculo,$Nombre_cliente,$Identificacion,$Hora_salida,$Fecha_salida,$Idregistro_vehiculos);
     $queryActualizacion->execute();
     header("location: home.php");
 ?>
