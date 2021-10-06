@@ -44,7 +44,7 @@ require_once"./vistas/encabezado.php"
                    <div class="row">
                    <div class="col-6">
                     <label for="horaingreso" class="form-label">Hora Ingreso Vehiculo </label>
-                    <input type="time" class="shadow-lg p-3 mb-5 bg-white rounded " name="horaingreso" id="horaingreso">
+                    <input type="time" class="shadow-lg p-3 mb-5 bg-white rounded " name="horaingreso" id="horaingreso"  >
                 </div>
 
                 <div class="col-6">
@@ -65,7 +65,7 @@ require_once"./vistas/encabezado.php"
 
                 </div>
             
-                <button class="btn mx-auto d-block btn-secondary">Agregar Vehiculo</button>
+                <button class="btn mx-auto d-block btn-primary">Agregar Vehiculo</button>
             </form>
         </div>
 
@@ -117,10 +117,10 @@ require_once"./vistas/encabezado.php"
                     <td> <?php echo $listadoIndividual["Hora_salida"] ?></td>
                     <td> <?php echo $listadoIndividual["Fecha_salida"] ?></td>
                     <td>
-                        <a href="editar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Editar</a>
+                        <a class="btn btn-primary" href="editar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Editar</a>
                     </td>
                     <td>
-                        <a href="eliminar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Eliminar</a>
+                        <a class="btn btn-secondary"  href="eliminar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Eliminar</a>
                     </td>
                 </tr>
                 <?php
