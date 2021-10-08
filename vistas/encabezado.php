@@ -122,7 +122,7 @@
 							<span>Administrador</span>
 						</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="profile.html">Mi Perfil</a>
+							
 							<a class="dropdown-item" href="calendario.php">Calendario</a>
 							<form method="POST">
 								<?php 
@@ -150,8 +150,8 @@
 				<div class="dropdown mobile-user-menu">
 					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="profile.html">Mi Perfil</a>
-						<a class="dropdown-item" href="settings.html">Configuracion</a>
+						
+						<a class="dropdown-item" href="calendario.php">Calendario</a>
 						<form method="POST">
 								<?php 
 									if($_SESSION['nombreUsuario']=="")
@@ -214,7 +214,7 @@
 								<a href="#" ><i class="la la-money"></i> <span> Tarifas </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="Tarifas.php"> Cambio de Tarifas </a></li>
-									<li><a class="noti-doc" href="listar_Tarifas.php"> Lista de Tarifas </a></li>
+									<li><a class="noti-dot" href="listar_Tarifas.php"> Lista de Tarifas </a></li>
 									<li><a class="noti-dot" href="Detalle tarifas/index.php"> Detalle tarifas</a></li> <!--solo  acceso para admi-->
 								
 								</ul>
