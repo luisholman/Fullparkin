@@ -1,6 +1,6 @@
 <?php
 $mysqli= include_once "./database/conexion.php";
-echo"se concecoootooo";
+echo"se conecto esta es la fecha";
 $Hora_ingreso= $_POST["horaingreso"];
 $Fecha_ingreso= $_POST["fechaingreso"];
 $Tipo_vehiculo= $_POST["tipovehiculo"];
@@ -20,7 +20,7 @@ Hora_salida,
 Fecha_salida)
 VALUES
 (?,?,?,?,?,?,?,?)");
-$queryInsercion->bind_param("ddsssidd",$Hora_ingreso,$Fecha_ingreso,$Tipo_vehiculo,$Placa_vehiculo,$Nombre_cliente,$Identificacion,$Hora_salida,$Fecha_salida);
+$queryInsercion->bind_param("sssssiss",$Hora_ingreso,$Fecha_ingreso,$Tipo_vehiculo,$Placa_vehiculo,$Nombre_cliente,$Identificacion,$Hora_salida,$Fecha_salida);
 $queryInsercion->execute();
 header("location: home.php");
 ?>

@@ -19,7 +19,7 @@ Impuestos,
 Total)
 VALUES
 (?,?,?,?,?,?,?,?)");
-$queryInsercion->bind_param("sddddiii",$Placa,$Fecha_de_Ingreso,$Hora_Ingreso,$Fecha_de_salida,$Hora_de_salida,$Subtotal,$Impuestos,$Total);
+$queryInsercion->bind_param("sssssiii",$Placa,$Fecha_de_Ingreso,$Hora_Ingreso,$Fecha_de_salida,$Hora_de_salida,$Subtotal,$Impuestos,$Total);
 $queryInsercion->execute();
 header("location: listar_Factura.php");
 ?>

@@ -18,8 +18,8 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 </div>
 <div class="col-12">
    
-    <table class="table table-bordered">
-    <thead>
+    <table class="table table-responsive" class="table table-bordered">
+    <thead class="table-dark">
     <tr>
         <th scope="col">ID</th>
         <th scope="col">Tarifa minuto</th>
@@ -48,10 +48,10 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
            <td> <?php echo $listadoIndividual["Tarifa_mes"] ?></td>
 
            <td>
-               <a href="editar_Tarifas.php?id=<?php echo $listadoIndividual["idTarifas"] ?>">Editar</a>
+               <a class="btn btn-primary" href="editar_Tarifas.php?id=<?php echo $listadoIndividual["idTarifas"] ?>">Editar</a>
            </td>
            <td>
-               <a href="eliminar_Tarifas.php?id=<?php echo $listadoIndividual["idTarifas"] ?>">Eliminar</a>
+               <a class="btn btn-secondary" href="eliminar_Tarifas.php?id=<?php echo $listadoIndividual["idTarifas"] ?>">Eliminar</a>
            </td>
        </tr>
     <?php

@@ -20,8 +20,8 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
     <h1 class="text-center" >Listado de servicios Adicionales</h1>
 </div>
 
-    <table class="table table-bordered border-gray ">
-    <thead>
+    <table class="table table-responsive" class="table table-bordered">
+    <thead class="table-dark">
     <tr>
         <th scope="col">Id Adicional</th>
         <th scope="col">Servicio</th>
@@ -48,10 +48,10 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
            <td> <?php echo $listadoIndividual["Valor"] ?></td>
 
            <td>
-               <a href="editarAdicionales.php?id=<?php echo $listadoIndividual["idAdicionales"] ?>">Editar</a>
+               <a class="btn btn-primary" href="editarAdicionales.php?id=<?php echo $listadoIndividual["idAdicionales"] ?>">Editar</a>
            </td>
            <td>
-               <a href="eliminarAdicionales.php?id=<?php echo $listadoIndividual["idAdicionales"] ?>">Eliminar</a>
+               <a class="btn btn-secondary" href="eliminarAdicionales.php?id=<?php echo $listadoIndividual["idAdicionales"] ?>">Eliminar</a>
            </td>
        </tr>
     <?php
@@ -61,7 +61,7 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 </table>
 <div class="col-12">
     <a class="btn btn-primary account-btn" href="adicionales.php">Agregar nuevo cliente</a>
-    <a class="btn btn-secondary my-2" href="home.php">Salir</a>
+    <a class="btn btn-secondary my-2" href="home.php">Ir a Pagina Principal</a>
 </div>
 </div>
 </div>

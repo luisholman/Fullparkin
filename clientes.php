@@ -31,7 +31,7 @@
                 </div>
                 <div class="mb-3" >
                 <button class="btn btn-primary account-btn">Guardar</button>
-                <a class="btn btn-secondary my-2" href="home.php">Regresar</a>
+                <a class="btn btn-secondary my-2" href="listarclientes.php">Ir a Listado de Clientes</a>
                 </div>
             </form>
         </div>
