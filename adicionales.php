@@ -28,7 +28,7 @@
 
             <div class="mb-3">
             <button class="btn btn-primary account-btn">Guardar</button>
-            <a class="btn btn-secondary" href="home.php">Regresar</a>
+            <a class="btn btn-secondary" href="listarAdicionales.php">Ir a Listado de Adicionales</a>
             </div>
         </form>
     </div>
