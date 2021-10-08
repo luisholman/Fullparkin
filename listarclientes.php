@@ -17,8 +17,8 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
     <h1 class="text-center" >Listado de clientes</h1>
 </div>
 <div class="col-12">
-    <table class="table table-bordered">
-    <thead>
+    <table class="table table-responsive" class="table table-bordered">
+    <thead class="table-dark">
     <tr>
         <th scope="col">ID</th>
         <th scope="col">Nombre</th>
@@ -61,7 +61,7 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
     </tbody>
 </table>
 <a class="btn btn-primary account-btn" href="clientes.php">Registrar cliente</a>
-<a class="btn btn-secondary my-2" href="home.php">Salir</a>
+<a class="btn btn-secondary my-2" href="home.php">Ir a Pagina Principal</a>
 </div>
 
 </div>
