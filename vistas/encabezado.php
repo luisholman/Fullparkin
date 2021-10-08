@@ -244,7 +244,7 @@
 							<li class="submenu">
 							<a href="#" ><i class="la la-box"></i> <span> Caja </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a class="noti-dot" href="Caja/index.php"> caja </a></li>
+									<li><a class="noti-dot" href="index_caja.php"> caja </a></li>
 									
 								</ul>
 							</li>

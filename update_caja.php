@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
 
 $id_caja = $_POST['id_caja'];
@@ -14,7 +14,7 @@ $sql = "UPDATE caja SET fecha_apertura = '$fecha_apertura',fecha_cierre = '$fech
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("location: index.php");
+    Header("location: index_caja.php");
     
     
     }
