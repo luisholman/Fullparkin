@@ -16,8 +16,8 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 </div>
 <div class="col-12">
   
-    <table class="table table-bordered">
-    <thead>
+    <table class="table table-responsive" class="table table-bordered">
+    <thead class="table-dark">
     <tr>
         <th scope="col">ID</th>
         <th scope="col">Administrador</th>
