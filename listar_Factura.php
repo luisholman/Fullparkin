@@ -20,8 +20,8 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 </div>
 <div class="col-12">
    
-    <table class="table table-bordered">
-        <thead>
+    <table class="table table-responsive" class="table table-bordered">
+        <thead class="table-dark">
             <tr>
                 <th scope="col">idFactura</th>
                 <th scope="col">Placa</th>
@@ -63,7 +63,7 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
     </tbody>
 </table>
 <a class="btn btn-primary account-btn" href="factura.php">Registrar factura</a>
-<a class="btn btn-secondary" href="factura.php">Regresar</a>
+<a class="btn btn-secondary" href="home.php">Ir a Pagina Principal</a>
 
 </div>
 </div>
