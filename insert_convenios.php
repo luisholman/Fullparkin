@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
 
 
@@ -16,7 +16,7 @@ $sql = "INSERT INTO convenios VALUES('$id_convenio','$empresa','$negocio','$otro
 $query = mysqli_query($con, $sql);
 
 if($query){
-Header("location: index.php");
+Header("location: index_convenios.php");
 
 
 }

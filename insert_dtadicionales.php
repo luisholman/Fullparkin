@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
 
 
@@ -16,7 +16,7 @@ $sql = "INSERT INTO lista_adicionales VALUES('$id_adicionales','$servicio','$hor
 $query = mysqli_query($con, $sql);
 
 if($query){
-Header("location: index.php");
+Header("location: index_dtadicionales.php");
 
 
 }

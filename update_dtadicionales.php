@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
 
 $id_adicionales = $_POST['id_adicionales'];
@@ -13,7 +13,7 @@ $sql = "UPDATE lista_adicionales SET servicio = '$servicio',horario = '$horario'
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("location: index.php");
+    Header("location: index_dtadicionales.php");
     
     
     }

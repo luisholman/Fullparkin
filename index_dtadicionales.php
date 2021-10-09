@@ -1,6 +1,6 @@
 <?php
-
-include("Conexion.php");
+include_once "./vistas/encabezado.php";
+include("connect.php");
 $con = conectar();
 
 $sql = "SELECT * FROM lista_adicionales";
@@ -27,7 +27,7 @@ $query = mysqli_query($con, $sql);
     <div class="col-md-3">
 
 
-        <form action="Insert.php"method="POST">
+        <form action="insert_dtadicionales.php"method="POST">
 
              <center> <h5>INGRESE AQUI DATOS</h5></center>
             <input type ="text" class="form-control mb-2" name="id_adicionales"placeholder="id_adicionales">
@@ -72,13 +72,14 @@ $query = mysqli_query($con, $sql);
               <td><center><?php echo $row["observaciones"]?></center></td>
             
 
-              <td><center><a href="Actualizar.php?id=<?php echo $row["id_adicionales"]?>"class="btn btn-info"><i class="bi bi-pencil-square"></i></a></center></td>
-              <td><center><a href="Delete.php?id=<?php echo $row["id_adicionales"]?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></center></td>
+              <td><center><a href="upgrade_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>"class="btn btn-info"><i class="bi bi-pencil-square"></i></a></center></td>
+              <td><center><a href="delete_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></center></td>
               
 
           </tr> 
           <?php
         }
+        include_once "./vistas/pie.php";
         ?>    
 
             </tbody>

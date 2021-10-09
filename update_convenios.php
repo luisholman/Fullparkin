@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
 
 $id_convenio = $_POST['id_convenio'];
@@ -14,7 +14,7 @@ $sql = "UPDATE convenios SET empresa = '$empresa',negocio = '$negocio',otros = '
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("location: index.php");
+    Header("location: index_convenios.php");
     
     
     }

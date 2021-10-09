@@ -204,7 +204,7 @@
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="clientes.php">Registrar Cliente</a></li>
 									<li><a class="noti-dot" href="listarclientes.php">Listado Cliente</a></li>
-									<li><a class="noti-dot" href="Convenios/index.php">Convenios</a></li>
+									<li><a class="noti-dot" href="index_convenios.php">Convenios</a></li>
 
 								</ul>
 							</li>
@@ -225,7 +225,7 @@
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="adicionales.php"> Agregar Servicio </a></li>
 									<li><a class="noti-dot" href="listarAdicionales.php"> Lista Adicionales </a></li>
-									<li><a class="noti-dot" href="Detalle adicionales/index.php"> Detalle adicionales</a></li> <!--solo  acceso para admi-->
+									<li><a class="noti-dot" href="index_dtadicionales.php"> Detalle adicionales</a></li> <!--solo  acceso para admi-->
 								</ul>
 							</li>
 							

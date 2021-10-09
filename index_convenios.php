@@ -1,6 +1,6 @@
 <?php
-
-include("Conexion.php");
+include_once "./vistas/encabezado.php";
+include("connect.php");
 $con = conectar();
 
 $sql = "SELECT * FROM Convenios";
@@ -26,7 +26,7 @@ $query = mysqli_query($con, $sql);
 <div class="row">
     <div class="col-md-3">
         
-        <form action="Insert.php"method="POST">
+        <form action="Insert_convenios.php"method="POST">
             
             <center> <h6>INGRESE AQUI DATOS </h6></center>
             <input type ="text" class="form-control mb-2" name="id_convenio"placeholder="id_convenio">
@@ -36,7 +36,7 @@ $query = mysqli_query($con, $sql);
             <input type ="text" class="form-control mb-2" name="observaciones"placeholder="observaciones">
            
            <center> <input type="submit" class="btn btn-success"></center>
-            <!--<input type="submit" class="btn btn-primary btn-block">-->
+         
         </form>
     </div>
 <div class="col-md-8"></div>
@@ -72,13 +72,14 @@ $query = mysqli_query($con, $sql);
               <td><center><?php echo $row["observaciones"]?></center></td>
             
 
-              <td><center><a href="Actualizar.php?id=<?php echo $row["id_convenio"]?>"class="btn btn-info"><i class="bi bi-pencil-square"></i></a></center></td>
-              <td><center><a href="Delete.php?id=<?php echo $row["id_convenio"]?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></center></td>
+              <td><center><a href="upgrade_convenios.php?id=<?php echo $row["id_convenio"]?>"class="btn btn-info"><i class="bi bi-pencil-square"></i></a></center></td>
+              <td><center><a href="delete_convenios.php?id=<?php echo $row["id_convenio"]?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></center></td>
               
 
           </tr> 
           <?php
         }
+        include_once "./vistas/pie.php";
         ?>    
 
             </tbody>
