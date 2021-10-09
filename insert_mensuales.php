@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
 
 
@@ -18,7 +18,7 @@ $sql = "INSERT INTO mensualidades VALUES('$id_mensualidades','$placa','$vehiculo
 $query = mysqli_query($con, $sql);
 
 if($query){
-Header("location: index.php");
+Header("location: index_mensuales.php");
 
 
 }

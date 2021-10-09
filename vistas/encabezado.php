@@ -215,7 +215,7 @@
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="Tarifas.php"> Cambio de Tarifas </a></li>
 									<li><a class="noti-dot" href="listar_Tarifas.php"> Lista de Tarifas </a></li>
-									<li><a class="noti-dot" href="Detalle tarifas/index.php"> Detalle tarifas</a></li> <!--solo  acceso para admi-->
+									<li><a class="noti-dot" href="index_dtarifas.php"> Detalle tarifas</a></li> <!--solo  acceso para admi-->
 								
 								</ul>
 							</li>
@@ -252,7 +252,7 @@
 							<li class="submenu">
 							<a href="#" ><i class="la la-car"></i> <span> Espacios </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a class="noti-dot" href="Espacios/index.php"> Espacios </a></li>
+									<li><a class="noti-dot" href="index_espacios.php"> Espacios </a></li>
 									
 								</ul>
 							</li>
@@ -283,7 +283,7 @@
 							<li class="submenu">
 								<a href="#"><i class="la la-table"></i> <span> Mensualidades </span> <span class="menu-arrow"></span></a> <!--solo  acceso para admi-->
 								<ul style="display: none;">
-									<li><a class="noti-dot" href="Mensualidades/index.php"> Mensualidades </a></li>
+									<li><a class="noti-dot" href="index_mensuales.php"> Mensualidades </a></li>
 								</ul>
 								</li>
 							<!--<li class="submenu">

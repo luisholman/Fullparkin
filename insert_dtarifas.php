@@ -1,7 +1,8 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
+
 
 $id_lista= $_POST["id_lista"];
 $vehiculo= $_POST["vehiculo"];
@@ -15,14 +16,14 @@ $mensual = $_POST["mensual"];
 $observaciones = $_POST["observaciones"];
 
 
-$sql = "UPDATE lista_tarifas SET vehiculo = '$vehiculo',minuto = '$minuto',hora = '$hora',dia = '$dia',noche = '$noche', semana = '$semana', quincenal = '$quincenal', mensual = '$mensual', observaciones = '$observaciones' WHERE id_lista = '$id_lista'";
+$sql = "INSERT INTO lista_tarifas VALUES('$id_lista','$vehiculo','$minuto','$hora','$dia','$noche','$semana','$quincenal','$mensual','$observaciones')";
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("location: index.php");
-    
-    
-    }
+Header("location: index_dtarifas.php");
+
+
+}
 
 
 ?>

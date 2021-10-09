@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
 
 $id_espacios = $_POST['id_espacios'];
@@ -16,7 +16,7 @@ $sql = "UPDATE espacios SET numero = '$numero',estado = '$estado',codigo_entrada
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("location: index.php");
+    Header("location: index_espacios.php");
     
     
     }

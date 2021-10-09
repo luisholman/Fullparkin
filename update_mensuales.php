@@ -1,6 +1,6 @@
 <?php
 
-include("conexion.php");
+include("connect.php");
 $con = conectar();
 
 $id_mensualidades = $_POST['id_mensualidades'];
@@ -16,7 +16,7 @@ $sql = "UPDATE mensualidades SET placa = '$placa',vehiculo = '$vehiculo',fecha_i
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("location: index.php");
+    Header("location: index_mensuales.php");
     
     
     }
