@@ -31,9 +31,13 @@ require_once"./vistas/encabezado.php"
                     <label for="tipovehiculo" class="form-label">Tipo de vehiculo</label>
                     <select id="tipovehiculo" class="form-control rounded-0 shadow-sm" name="tipovehiculo" name="Tipo de vehiculo">
                         <option value="carro">Carro</option>
+                        <option value="buseta">Taxi</option>
                         <option value="buseta">Buseta</option>
+                        <option value="buseta">Camion</option>
                         <option value="motocicleta">Motocicleta</option>
+                        <option value="buseta">Mototaxi</option>
                         <option value="bicicleta">Bicicleta</option>
+                        <option value="buseta">Monopatin</option>
                     </select> 
                 </div>
                     <div class="form-group">
