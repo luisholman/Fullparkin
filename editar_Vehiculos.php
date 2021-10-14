@@ -35,9 +35,13 @@ if(!$infoCliente){
             <label for="tipovehiculo" class="form-label">Tipo de vehiculo</label>
             <select id="tipovehiculo" class="form-control" name="tipovehiculo" value="<?php echo $infoCliente["Tipo_vehiculo"] ?>" name="Tipo de vehiculo">
                 <option value="carro">Carro</option>
+                <option value="buseta">Taxi</option>
                 <option value="buseta">Buseta</option>
+                <option value="buseta">Camion</option>
                 <option value="motocicleta">Motocicleta</option>
+                <option value="buseta">Mototaxi</option>
                 <option value="bicicleta">Bicicleta</option>
+                <option value="buseta">Monopatin</option>
              </select> 
             </div>
             <div class="mb-3">
