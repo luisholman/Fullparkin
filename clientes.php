@@ -7,7 +7,7 @@
             <form action="registrarclientes.php" method="POST">
                 <div class="mb-3">
                 <label for="nombre" class="form-label">nombre del cliente</label>
-                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ingrese el nombre del cliente">
+                <input type="text" class="typeaheadnombre form-control" name="nombre" id="nombre" placeholder="Ingrese el nombre del cliente">
                 </div>
                 <div class="mb-3">
                 <label for="identificacion" class="form-label">Identificacion del cliente</label>
