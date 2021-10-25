@@ -21,7 +21,7 @@ require_once"./vistas/encabezado.php"
             <form class="w-50 mx-auto" action="registrar_Vehiculos.php" method="POST" >            
                 <div class="form-group">
                     <label for="nombrecliente" class="form-label">Nombre del Cliente</label>
-                    <input type="text" class="form-control rounded-0 shadow-sm" name="nombrecliente" id="nombrecliente" placeholder="Ingrese nombre del cliente">
+                    <input type="text" class="typeahead_nombre_registro_vehiculos form-control rounded-0 shadow-sm" name="nombrecliente" id="nombrecliente" placeholder="Ingrese nombre del cliente">
                 </div>
                 <div class="form-group">
                     <label for="identificacion" class="form-label">Identificacion</label>
@@ -42,7 +42,7 @@ require_once"./vistas/encabezado.php"
                 </div>
                     <div class="form-group">
                         <label for="placavehiculo" class="form-label"> Placa </label>
-                        <input type="text" class="form-control rounded-0 shadow-sm" name="placavehiculo" id="placavehiculo" placeholder="Ingrese placa del vehiculo">
+                        <input type="text" class="typeahead form-control rounded-0 shadow-sm" name="placavehiculo" id="placavehiculo" placeholder="Ingrese placa del vehiculo">
                     </div>
 
                    <div class="row">
@@ -69,7 +69,7 @@ require_once"./vistas/encabezado.php"
                 <!--class="shadow-lg p-2 mb-4 bg-white rounded"-->
                 </div>
             
-                <button class="btn mx-auto d-block btn-primary">Agregar Vehiculo</button>
+                <button class="btn mx-auto d-block btn-primary ">Agregar Vehiculo</button>
             </form>
         </div>
 
@@ -93,7 +93,7 @@ require_once"./vistas/encabezado.php"
             <h1 class="text-center" >Listado de Vehiculos Ingresados</h1>
             </div>
         <div class="col-12">
-                <table class="table table-responsive" class="table table-bordered">
+                <table class="table table-responsive" class="table table-bordered table-sm">
                 <thead class="table-dark">
                 <tr>
                     <th scope="col">Nombre Cliente</th>
@@ -121,10 +121,10 @@ require_once"./vistas/encabezado.php"
                     <td> <?php echo $listadoIndividual["Hora_salida"] ?></td>
                     <td> <?php echo $listadoIndividual["Fecha_salida"] ?></td>
                     <td>
-                        <a class="btn btn-primary" href="editar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Editar</a>
+                        <a class="btn btn-primary btn-sm" href="editar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Editar</a>
                     </td>
                     <td>
-                        <a class="btn btn-secondary"  href="eliminar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Eliminar</a>
+                        <a class="btn btn-secondary btn-sm"  href="eliminar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Eliminar</a>
                     </td>
                 </tr>
                 <?php
