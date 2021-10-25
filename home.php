@@ -42,7 +42,7 @@ require_once"./vistas/encabezado.php"
                 </div>
                     <div class="form-group">
                         <label for="placavehiculo" class="form-label"> Placa </label>
-                        <input type="text" class="typeahead form-control rounded-0 shadow-sm" name="placavehiculo" id="placavehiculo" placeholder="Ingrese placa del vehiculo">
+                        <input type="text" class="typeahead_placa_registro_vehiculos form-control rounded-0 shadow-sm" name="placavehiculo" id="placavehiculo" placeholder="Ingrese placa del vehiculo">
                     </div>
 
                    <div class="row">
