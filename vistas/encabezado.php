@@ -52,6 +52,12 @@
 		
 		<!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+
+
+		<!-- codigo de omar para iconos de editar y eliminar-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+
 		
 		
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->

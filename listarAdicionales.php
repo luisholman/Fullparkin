@@ -48,10 +48,10 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
            <td> <?php echo $listadoIndividual["Valor"] ?></td>
 
            <td>
-               <a class="btn btn-primary" href="editarAdicionales.php?id=<?php echo $listadoIndividual["idAdicionales"] ?>">Editar</a>
+               <a class="btn btn-primary" href="editarAdicionales.php?id=<?php echo $listadoIndividual["idAdicionales"] ?>"><i class="bi bi-pencil-square"></i></a>
            </td>
            <td>
-               <a class="btn btn-secondary" href="eliminarAdicionales.php?id=<?php echo $listadoIndividual["idAdicionales"] ?>">Eliminar</a>
+               <a class="btn btn-secondary" href="eliminarAdicionales.php?id=<?php echo $listadoIndividual["idAdicionales"] ?>"><i class="bi bi-trash"></i></a>
            </td>
        </tr>
     <?php

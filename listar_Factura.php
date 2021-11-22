@@ -51,10 +51,10 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
            <td> <?php echo $listadoIndividual["Impuestos"] ?></td>
            <td> <?php echo $listadoIndividual["Total"] ?></td>
            <td>
-               <a class="btn btn-primary" href="editar_Factura.php?id=<?php echo $listadoIndividual["idFactura"] ?>">Editar</a>
+               <a class="btn btn-primary" href="editar_Factura.php?id=<?php echo $listadoIndividual["idFactura"] ?>"><i class="bi bi-pencil-square"></i></a>
            </td>
            <td>
-               <a class="btn btn-secondary" href="eliminar_Factura.php?id=<?php echo $listadoIndividual["idFactura"] ?>">Eliminar</a>
+               <a class="btn btn-secondary" href="eliminar_Factura.php?id=<?php echo $listadoIndividual["idFactura"] ?>"><i class="bi bi-trash"></i></a>
            </td>
        </tr>
     <?php

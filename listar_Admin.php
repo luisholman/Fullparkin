@@ -43,10 +43,10 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 
 
            <td>
-               <a class="btn btn-primary" href="editar_Admin.php?id=<?php echo $listadoIndividual["idAdmin"] ?>">Editar</a>
+               <a class="btn btn-primary" href="editar_Admin.php?id=<?php echo $listadoIndividual["idAdmin"] ?>"><i class="bi bi-pencil-square"></i></a>
            </td>
            <td>
-               <a class="btn btn-secondary" href="eliminar_Admin.php?id=<?php echo $listadoIndividual["idAdmin"] ?>">Eliminar</a>
+               <a class="btn btn-secondary" href="eliminar_Admin.php?id=<?php echo $listadoIndividual["idAdmin"] ?>"><i class="bi bi-trash"></i></a>
            </td>
        </tr>
     <?php
