@@ -16,10 +16,7 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 <div class="container">
 <div class="row">
 <div class="col-12">
-    <h1 class="text-center" >Listado de Facturas</h1>
-</div>
-<div class="col-12">
-   
+<h2 class="text-center" >Listado de Facturas</h2>
     <table class="table table-responsive" class="table table-bordered">
         <thead class="table-dark">
             <tr>

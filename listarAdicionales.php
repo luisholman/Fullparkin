@@ -15,12 +15,11 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 
 
 <div class="container">
-<div class="row">
 <div class="col-12">
     <h1 class="text-center" >Listado de servicios Adicionales</h1>
 </div>
 
-    <table class="table table-responsive" class="table table-bordered">
+    <table class="table table-responsive" class="table table-bordered ">
     <thead class="table-dark">
     <tr>
         <th scope="col">Id Adicional</th>
@@ -62,7 +61,6 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 <div class="col-12">
     <a class="btn btn-primary account-btn" href="adicionales.php">Agregar nuevo cliente</a>
     <a class="btn btn-secondary my-2" href="home.php">Ir a Pagina Principal</a>
-</div>
 </div>
 </div>
 <?php

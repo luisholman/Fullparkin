@@ -1,8 +1,12 @@
 <?php include_once "./vistas/encabezado.php" ?>
 
-<div class="container">
+<div class="container mt-5">
 <div class="row">
-    <div class="col-12">
+
+            <div class="col-md-3">
+            </div>
+
+    <div class="col-md-6">
         <h1 class="text-center" >Registrar Factura</h1>
         <form action="registrar_Factura.php" method="POST">
         <div class="mb-3">
@@ -42,6 +46,10 @@
             <a class="btn btn-secondary" href="listar_Factura.php">Ir a Listado de Facturas</a>
             </div>
         </form>
+        </div>
+
+        <div class="col-md-3">
+        </div>
     </div>
 </div>
 </div>

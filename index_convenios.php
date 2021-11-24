@@ -9,43 +9,32 @@ $query = mysqli_query($con, $sql);
 
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crud convenios</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
-</head>
-<body>
+
     <div class="container mt-2">
 <div class="row">
     <div class="col-md-3">
         
         <form action="Insert_convenios.php"method="POST">
-            
-            <center> <h6>INGRESE AQUI DATOS </h6></center>
+            <center> <h5>INGRESE AQUI DATOS </h5></center>
             <input type ="text" class="form-control mb-2" name="id_convenio"placeholder="id_convenio">
             <input type ="text" class="form-control mb-2" name="empresa"placeholder="empresa">
             <input type ="text" class="form-control mb-2" name="negocio"placeholder="negocio">
             <input type ="text" class="form-control mb-2" name="otros"placeholder="otros">
             <input type ="text" class="form-control mb-2" name="observaciones"placeholder="observaciones">
            
-           <center> <input type="submit" class="btn btn-success"></center>
-         
+           <center> <input type="submit" class="btn btn-primary"></center>
+         <br>
         </form>
     </div>
-<div class="col-md-8"></div>
-            <table class="table table-bordered  border-primary">
+<div class="col-md-9" >
+            <table  class="table table-bordered  border-primary">
             <caption> FULLPARKING "lo cuidamos como en casa"</caption>
             <thead class="table-dark">
                 <tr>
                     
-                <center> <h5>CONVENIOS</h5></center>
+               <h5 class="text-center">LISTADO DE CONVENIOS</h5>
                 <th scope="col"><center>Id</center></th>
                 <th scope="col"><center>Empresa</center></th>
                 <th scope="col"><center>Negocio</center></th>
@@ -73,7 +62,7 @@ $query = mysqli_query($con, $sql);
             
 
               <td><center><a href="upgrade_convenios.php?id=<?php echo $row["id_convenio"]?>"class="btn btn-info"><i class="bi bi-pencil-square"></i></a></center></td>
-              <td><center><a href="delete_convenios.php?id=<?php echo $row["id_convenio"]?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></center></td>
+              <td><center><a href="delete_convenios.php?id=<?php echo $row["id_convenio"]?>" class="btn btn-primary"><i class="bi bi-trash"></i></a></center></td>
               
 
           </tr> 
@@ -84,6 +73,7 @@ $query = mysqli_query($con, $sql);
 
             </tbody>
             </table>
+    </div>
     </div>
 </body>
 </html>

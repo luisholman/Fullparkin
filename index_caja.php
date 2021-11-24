@@ -14,9 +14,8 @@ $query = mysqli_query($con, $sql);
 
     <div class="container mt-2">
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-3">
         <form action="insert_caja.php"method="POST">
-            <h2 class="text-center">Caja</h2>
             <center> <h5>INGRESE AQUI DATOS </h5></center>
             <input type ="text" class="form-control mb-2" name="id_caja"placeholder="id_caja">
             <input type ="text" class="form-control mb-2" name="fecha_apertura"placeholder="fecha_apertura">
@@ -31,14 +30,13 @@ $query = mysqli_query($con, $sql);
         </form>
     </div>
 
-<div class="col-md-12" class="container fluid">
+<div class="col-md-9" class="container fluid">
             <table class="table table-bordered  border-primary">
             <caption> FULLPARKING "lo cuidamos como en casa" </caption>
             <thead class="table-dark">
 
                 <tr>
-                    <br>
-               
+               <center> <h5>CAJA</h5></center>
                 <th scope="col"><center>Id</center></th>
                 <th scope="col"><center>Fecha apertura</center></th>
                 <th scope="col"><center>Fecha cierre</center></th>
@@ -64,7 +62,7 @@ $query = mysqli_query($con, $sql);
               <td><center><?php echo $row["monto"]?></center></td>
             
 
-              <td><center><a href="upgrade_caja.php?id=<?php echo $row["id_caja"]?>"class="btn btn-secondary"><i class="bi bi-pencil-square"></i></a></center></td>
+              <td><center><a href="upgrade_caja.php?id=<?php echo $row["id_caja"]?>"class="btn btn-info"><i class="bi bi-pencil-square"></i></a></center></td>
               <td><center><a href="delete_caja.php?id=<?php echo $row["id_caja"]?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></center></td>
               
 
