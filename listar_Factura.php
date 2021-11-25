@@ -13,24 +13,24 @@ $resultadoQuery = $mysqli->query("SELECT idFactura,
 FROM factura");
 $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 ?>
-<div class="container">
+<div class="container mt-2">
 <div class="row">
 <div class="col-12">
-<h2 class="text-center" >Listado de Facturas</h2>
+<h3 class="text-center" >LISTADO FACTURA</h3>
     <table class="table table-responsive" class="table table-bordered">
         <thead class="table-dark">
             <tr>
-                <th scope="col">idFactura</th>
-                <th scope="col">Placa</th>
-                <th scope="col">fecha de ingreso</th>
-                <th scope="col">Hora de ingreso</th>
-                <th scope="col">Fecha de salida</th>
-                <th scope="col">Hora de salida</th>
-                <th scope="col">Subtotal</th>
-                <th scope="col">Impuestos</th>
-                <th scope="col">Total</th>
-                <th scope="col">Editar</th>
-                <th scope="col">Eliminar</th>
+                <th scope="col" class="text-info">idFactura</th>
+                <th scope="col" class="text-info">Placa</th>
+                <th scope="col" class="text-info">fecha de ingreso</th>
+                <th scope="col" class="text-info">Hora de ingreso</th>
+                <th scope="col" class="text-info">Fecha de salida</th>
+                <th scope="col" class="text-info">Hora de salida</th>
+                <th scope="col" class="text-info">Subtotal</th>
+                <th scope="col" class="text-info">Impuestos</th>
+                <th scope="col" class="text-info">Total</th>
+                <th scope="col" class="text-info">Editar</th>
+                <th scope="col" class="text-info">Eliminar</th>
             </tr>
         </thead>
     <tbody>
@@ -48,10 +48,10 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
            <td> <?php echo $listadoIndividual["Impuestos"] ?></td>
            <td> <?php echo $listadoIndividual["Total"] ?></td>
            <td>
-               <a class="btn btn-primary" href="editar_Factura.php?id=<?php echo $listadoIndividual["idFactura"] ?>"><i class="bi bi-pencil-square"></i></a>
+               <a class="btn btn-outline-primary" href="editar_Factura.php?id=<?php echo $listadoIndividual["idFactura"] ?>"><i class="bi bi-pencil-square"></i></a>
            </td>
            <td>
-               <a class="btn btn-secondary" href="eliminar_Factura.php?id=<?php echo $listadoIndividual["idFactura"] ?>"><i class="bi bi-trash"></i></a>
+               <a class="btn btn-outline-danger" href="eliminar_Factura.php?id=<?php echo $listadoIndividual["idFactura"] ?>"><i class="bi bi-trash"></i></a>
            </td>
        </tr>
     <?php
@@ -59,9 +59,10 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
     ?>
     </tbody>
 </table>
+<center>
 <a class="btn btn-primary account-btn" href="factura.php">Registrar factura</a>
 <a class="btn btn-secondary" href="home.php">Ir a Pagina Principal</a>
-
+</center>
 </div>
 </div>
 </div>

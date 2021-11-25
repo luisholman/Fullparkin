@@ -16,8 +16,8 @@ require_once"./vistas/encabezado.php"
             </form>
         </div>
         
-        <div class="form-container mt-5">
-            <h1 class="text-center" >Registro vehiculos</h1>
+        <div class="form-container mt-2">
+            <h3 class="text-center text-dark" >REGISTRO VEHICULOS</h3>
             <form class="w-50 mx-auto" action="registrar_Vehiculos.php" method="POST" >            
                 <div class="form-group">
                     <label for="nombrecliente" class="form-label">Nombre del Cliente</label>
@@ -90,22 +90,22 @@ require_once"./vistas/encabezado.php"
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-            <h1 class="text-center" >Listado de Vehiculos Ingresados</h1>
+            <h3 class="text-center text-dark" >LISTADO DE VEHICULOS INGRESADOS</h3>
             </div>
         <div class="col-12">
                 <table class="table table-responsive" class="table table-bordered table-sm">
                 <thead class="table-dark">
                 <tr>
-                    <th scope="col">Nombre Cliente</th>
-                    <th scope="col">Identificacion</th>
-                    <th scope="col">Tipo de Vehiculo</th>
-                    <th scope="col">Placa Vehiculo</th>
-                    <th scope="col">Hora de Ingreso</th>
-                    <th scope="col">Fecha de Ingreso</th>
-                    <th scope="col">Hora de Salida</th>
-                    <th scope="col">Fecha de Salida</th>
-                    <th scope="col">Editar</th>
-                    <th scope="col">Eliminar</th>
+                    <th scope="col" class="text-info">Nombre Cliente</th>
+                    <th scope="col" class="text-info">Identificacion</th>
+                    <th scope="col" class="text-info">Tipo de Vehiculo</th>
+                    <th scope="col" class="text-info">Placa Vehiculo</th>
+                    <th scope="col" class="text-info">Hora de Ingreso</th>
+                    <th scope="col" class="text-info">Fecha de Ingreso</th>
+                    <th scope="col"class="text-info">Hora de Salida</th>
+                    <th scope="col"class="text-info">Fecha de Salida</th>
+                    <th scope="col"class="text-info">Editar</th>
+                    <th scope="col"class="text-info">Eliminar</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -121,10 +121,10 @@ require_once"./vistas/encabezado.php"
                     <td> <?php echo $listadoIndividual["Hora_salida"] ?></td>
                     <td> <?php echo $listadoIndividual["Fecha_salida"] ?></td>
                     <td>
-                        <a class="btn btn-primary btn-sm" href="editar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Editar</a>
+                        <a class="btn btn-outline-primary btn-sm" href="editar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>"><i class="bi bi-pencil-square"></i></a>
                     </td>
                     <td>
-                        <a class="btn btn-secondary btn-sm"  href="eliminar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>">Eliminar</a>
+                        <a class="btn btn-outline-secondary btn-sm"  href="eliminar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>"><i class="bi bi-trash"></i></a>
                     </td>
                 </tr>
                 <?php

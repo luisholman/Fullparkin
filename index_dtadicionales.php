@@ -60,8 +60,8 @@ $query = mysqli_query($con, $sql);
               <td><center><?php echo $row["observaciones"]?></center></td>
             
 
-              <td><center><a href="upgrade_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>"class="btn btn-info"><i class="bi bi-pencil-square"></i></a></center></td>
-              <td><center><a href="delete_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></center></td>
+              <td><center><a href="upgrade_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>"class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i></a></center></td>
+              <td><center><a href="delete_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a></center></td>
               
 
           </tr> 

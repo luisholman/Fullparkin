@@ -68,8 +68,8 @@ $query = mysqli_query($con, $sql);
               <td><center><?php echo $row["hora_ingreso"]?></center></td>
               <td><center><?php echo $row["salida"]?></center></td>
 
-              <td><center><a href="upgrade_espacios.php?id=<?php echo $row["id_espacios"]?>"class="btn btn-secondary"><i class="bi bi-pencil-square"></i></a></center></td>
-              <td><center><a href="delete_espacios.php?id=<?php echo $row["id_espacios"]?>" class="btn btn-primary"><i class="bi bi-trash"></i></a></center></td>
+              <td><center><a href="upgrade_espacios.php?id=<?php echo $row["id_espacios"]?>"class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i></a></center></td>
+              <td><center><a href="delete_espacios.php?id=<?php echo $row["id_espacios"]?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a></center></td>
               
 
           </tr> 
