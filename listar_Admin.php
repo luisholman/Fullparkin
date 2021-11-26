@@ -13,11 +13,11 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 <div class="container mt-2">
     <div class="row">
         
-    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
 
-    <div class="col-md-8">
+    <div class="col-md-10">
     <h3 class="text-center" >LISTADO ACCESO ADMINISTRACION</h3>
-        <table  class="table table-bordered">
+        <table  class="table table-responsive table table-bordered">
         <thead class="table-dark">
         <tr>
             <th scope="col"class="text-info">ID</th>
@@ -62,7 +62,7 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
     </center>
 
     </div>
-    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
     </div>
 </div>
 <?php

@@ -31,7 +31,7 @@ $query = mysqli_query($con, $sql);
         </form>
     </div>
 <div class="col-md-9">
-            <table class="table table-bordered  border-primary" >
+            <table class="table table-responsive table table-bordered  border-dark" >
             <caption> FULLPARKING "lo cuidamos como en casa"</caption>
             <thead class="table-dark">
                 <tr>
