@@ -25,11 +25,11 @@ require_once"./vistas/encabezado.php"
                 </div>
                 <div class="form-group">
                     <label for="identificacion" class="form-label">Identificacion</label>
-                    <input type="text" class="form-control rounded-0 shadow-sm" name="identificacion" id="identificacion" placeholder="ingrese Identificacion cliente">
+                    <input type="text" class="form-control rounded-0 shadow-sm" name="identificacion" id="identificacion" placeholder="ingrese Identificacion cliente" required>
                 </div>
                 <div class="form-group">
                     <label for="tipovehiculo" class="form-label">Tipo de vehiculo</label>
-                    <select id="tipovehiculo" class="form-control rounded-0 shadow-sm" name="tipovehiculo" name="Tipo de vehiculo">
+                    <select id="tipovehiculo" class="form-control rounded-0 shadow-sm" name="tipovehiculo" name="Tipo de vehiculo" required>
                         <option value="carro">Carro</option>
                         <option value="buseta">Taxi</option>
                         <option value="buseta">Buseta</option>
@@ -42,28 +42,28 @@ require_once"./vistas/encabezado.php"
                 </div>
                     <div class="form-group">
                         <label for="placavehiculo" class="form-label"> Placa </label>
-                        <input type="text" class="typeahead_placa_registro_vehiculos form-control rounded-0 shadow-sm" name="placavehiculo" id="placavehiculo" placeholder="Ingrese placa del vehiculo">
+                        <input type="text" class="typeahead_placa_registro_vehiculos form-control rounded-0 shadow-sm" name="placavehiculo" id="placavehiculo" placeholder="Ingrese placa del vehiculo" required>
                     </div>
 
                    <div class="row">
                    <div class="col-6">
                     <label for="horaingreso" class="form-label">Hora de Ingreso Vehiculo </label>
-                    <input type="time" class="form-control rounded-0 shadow-sm " name="horaingreso" id="horaingreso"  >
+                    <input type="time" class="form-control rounded-0 shadow-sm " name="horaingreso" id="horaingreso" required >
                 </div>
 
                 <div class="col-6">
                     <label for="fechaingreso" class="form-label"> Fecha de Ingreso Vehiculo </label>
-                    <input type="date" class="form-control rounded-0 shadow-sm " name="fechaingreso" id="fechaingreso">
+                    <input type="date" class="form-control rounded-0 shadow-sm " name="fechaingreso" id="fechaingreso" required>
                 </div>
 
                 <div class="col-6">
                     <label for="horasalida" class="form-label">Hora de Salida Vehiculo</label>
-                    <input type="time" class="form-control rounded-0 shadow-sm " name="horasalida" id="horasalida">
+                    <input type="time" class="form-control rounded-0 shadow-sm " name="horasalida" id="horasalida" required>
                 </div>
                
                 <div class="col-6">
                     <label for="fechasalida" class="form-label">Fecha de Salida Vehiculo</label>
-                    <input type="date"class="form-control rounded-0 mb-4 shadow-sm "  name="fechasalida" id="fechasalida" >
+                    <input type="date"class="form-control rounded-0 mb-4 shadow-sm "  name="fechasalida" id="fechasalida" required>
                 </div>
                 </div>
                 <!--class="shadow-lg p-2 mb-4 bg-white rounded"-->
@@ -124,7 +124,7 @@ require_once"./vistas/encabezado.php"
                         <a class="btn btn-outline-primary btn-sm" href="editar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>"><i class="bi bi-pencil-square"></i></a>
                     </td>
                     <td>
-                        <a class="btn btn-outline-secondary btn-sm"  href="eliminar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>"><i class="bi bi-trash"></i></a>
+                        <a class="btn btn-outline-danger btn-sm"  href="eliminar_Vehiculos.php?id=<?php echo $listadoIndividual["Idregistro_vehiculos"] ?>"><i class="bi bi-trash"></i></a>
                     </td>
                 </tr>
                 <?php
