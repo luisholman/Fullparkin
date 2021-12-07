@@ -261,7 +261,7 @@
 							</li>
 
 
-							<li class="submenu">
+							<!--	<li class="submenu">
 								<a href="#" ><i class="la la-hand-o-up"></i> <span> Contactanos </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="subscriptions.html"> Luis Oicata </a></li>
@@ -275,13 +275,14 @@
 									<li><a class="noti-dot"  href="suscripcion.php"> Suscribete </a></li>
 									
 								</ul>
-							</li>
-							<!--<li class="submenu"> 
+							</li>-->
+
+						<li class="submenu"> 
 								<a href="#"><i class="la la-table"></i> <span> Calendario </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a class="noti-dot" href="calendario.php"> Calendario </a></li>
 								</ul>
-							</li> -->
+							</li> 
 
 							<li class="submenu">
 								<a href="#"><i class="la la-table"></i> <span> Mensualidades </span> <span class="menu-arrow"></span></a> <!--solo  acceso para admi-->

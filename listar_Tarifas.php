@@ -63,7 +63,7 @@ $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
 </table>
     <center>
         <a class="btn btn-primary account-btn" href="Tarifas.php">Agregar tarifa</a>
-        <a class="btn btn-secondary my-2" href="Tarifas.php">Ir a Pagina Principal</a>
+        <a class="btn btn-secondary my-2" href="home.php">Ir a Pagina Principal</a>
     </center>
 
 
