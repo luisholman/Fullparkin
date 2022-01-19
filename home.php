@@ -87,6 +87,7 @@ require_once"./vistas/encabezado.php"
     FROM registro_vehiculos");
     $listadoClientes= $resultadoQuery->fetch_all(MYSQLI_ASSOC);
     ?>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
