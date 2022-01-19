@@ -13,7 +13,6 @@
     Password=?,
     Email=?                          
     WHERE idAdmin= ?");
-
     $queryActualizacion->bind_param("ssssi",$Administrador,$Empleado,$Password,$Email,$idAdmin);
     $queryActualizacion->execute();
     header("location: listar_Admin.php");
