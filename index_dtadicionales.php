@@ -9,19 +9,7 @@ $query = mysqli_query($con, $sql);
 
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crud lista adicionales</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-
-</head>
-<body>
     <div class="container mt-3">
 <div class="row">
     <div class="col-md-3">
@@ -36,11 +24,11 @@ $query = mysqli_query($con, $sql);
             <input type ="text" class="form-control mb-2" name="observaciones"placeholder="observaciones">
 
             
-            <center><input type="submit" class="btn btn-success"></center>
+            <center><input type="submit" class="btn btn-primary"></center>
 
         </form>
     </div>
-<div class="col-md-8"></div>
+<div class="col-md-9">
             <table class="table table-bordered  border-primary">
             <caption> FULLPARKING "lo cuidamos como en casa" </caption>
             <thead class="table-dark">
@@ -72,8 +60,8 @@ $query = mysqli_query($con, $sql);
               <td><center><?php echo $row["observaciones"]?></center></td>
             
 
-              <td><center><a href="upgrade_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>"class="btn btn-info"><i class="bi bi-pencil-square"></i></a></center></td>
-              <td><center><a href="delete_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>" class="btn btn-danger"><i class="bi bi-trash"></i></a></center></td>
+              <td><center><a href="upgrade_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>"class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i></a></center></td>
+              <td><center><a href="delete_dtadicionales.php?id=<?php echo $row["id_adicionales"]?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a></center></td>
               
 
           </tr> 
@@ -84,6 +72,7 @@ $query = mysqli_query($con, $sql);
 
             </tbody>
             </table>
+    </div>
     </div>
 </body>
 </html>

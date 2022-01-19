@@ -1,10 +1,14 @@
 <?php include_once "./vistas/encabezado.php" ?>
 
-<div class="container">
+<div class="container mt-2">
 <div class="row">
-    <div class="col-12">
-        <h1>Tarifas </h1>
-        <form action="registrar.php" method="POST">
+
+        <div class="col-md-3">
+        </div>
+
+    <div class="col-6">
+        <h3 class="text-center text-dark">TARIFAS </h3>
+        <form action="registrar_Tarifas.php" method="POST">
             <div class="mb-3">
             <label for="minuto" class="form-label">Tarifa Minuto</label>
             <input type="text" class="form-control" name="minuto" id="minuto" placeholder="Ingrese tarifa por minuto">
@@ -29,14 +33,18 @@
             <label for="mes" class="form-label">Tarifa Mes</label>
             <input type="text" class="form-control" name="mes" id="mes" placeholder="Ingrese tarifa por mes">
             </div>
-
-
             <div class="mb-3">
+                <center>
             <button class="btn btn-primary account-btn">Guardar</button>
             <a class="btn btn-secondary my-2" href="listar_Tarifas.php">Ir a listado de Tarifas</a>
+            </center>
             </div>
         </form>
     </div>
+
+        <div class="col-md-3">
+        </div>
+
     </div>
 </div>
 <?php include_once "./vistas/pie.php" ?>

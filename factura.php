@@ -1,9 +1,13 @@
 <?php include_once "./vistas/encabezado.php" ?>
 
-<div class="container">
+<div class="container mt-2">
 <div class="row">
-    <div class="col-12">
-        <h1 class="text-center" >Registrar Factura</h1>
+
+            <div class="col-md-3">
+            </div>
+
+    <div class="col-md-6">
+        <h3 class="text-center text-dark" >REGISTRAR FACTURA</h3>
         <form action="registrar_Factura.php" method="POST">
         <div class="mb-3">
             <label for="placa" class="form-label">Placa</label>
@@ -38,10 +42,16 @@
             <input type="text" class="form-control" name="total" id="total" placeholder="ingrese el total">
             </div>
             <div class="mb-3">
+                <center>
             <button class="btn btn-primary account-btn">Guardar</button>
             <a class="btn btn-secondary" href="listar_Factura.php">Ir a Listado de Facturas</a>
+            </center>
             </div>
         </form>
+        </div>
+
+        <div class="col-md-3">
+        </div>
     </div>
 </div>
 </div>
